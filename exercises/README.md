@@ -301,7 +301,7 @@ The problem tests the ability to use loops and conditional statements to calcula
 | No. | Inputs | Outputs |
 | --- | ------ | ------- |
 | 1   | 12345  | 111<br>Error<br>45<br>Error<br>12345<br>Done |
-| 2   | 123    | 111<br>Error<br>45<br>Error<br>12345<br>Error |
+| 2   | 123    | 111<br>Error<br>45<br>Error<br>12345<br>Error<br>123<br>Done |
 | 3   | 111    | 111<br>Done |
 
 ### Note:
@@ -407,7 +407,6 @@ The problem tests the ability to use loops and conditional statements to print a
 3 	3 	3
 4 	4 	4
 5 	5 	5
-6 	6 	6
 ```
 
 #### Pattern 2
@@ -427,7 +426,7 @@ The problem tests the ability to use loops and conditional statements to print a
 
 ## Exercise 18: Number Pattern - Medium 🔥 (Est. Time: 10-15 mins | Points: 20)
 
-**Problem:** Write a program to determine the total number of zeros collected over `n` days.
+**Problem:** Write a program to determine the total number of erors collected over `n` days.
 
 ### Input:
 - An integer `n` representing the number of days.
@@ -466,9 +465,9 @@ The problem tests the ability to use loops and conditional statements to calcula
 | --- | ------ | ------- |
 | 1   | 5 | 	12, 13, 17, 18, 21, 24, 26, 29, 31, 34, 36, 39, 42, 43, 47, 48, 50, 55, 62, 63, 67, 68, 71, 74, 76, 79, 81, 84, 86, 89, 92, 93, 97, 98 |
 | 2 | 7 | 70, 77 |
-| 3 | 10 | 13, 17, 24, 26, 29 |
-| 4 | 100 | 68, 86 |
-| 5 | 188 | 99 |
+| 3 | 10 | 13, 17, 24, 26, 29, 31, 34, 36, 39, 42, 43, 47, 48, 51, 53, 54, 57, 58, 62, 63, 67, 68, 71, 74, 76, 79, 82, 83, 87, 88, 91, 93, 94, 97, 98 |
+| 4 | 100 | 68, 86|
+| 5 | 162 | 99 |
 
 ### Note:
 
@@ -491,7 +490,7 @@ The problem tests the ability to use loops and conditional statements to print a
 
 | No. | Inputs | Outputs |
 | --- | ------ | ------- |
-| 1   | 15 | 51 3 5 7 9 11 13 15 |
+| 1   | 15 | 1 3 5 7 9 11 13 15 |
 | 2 | 8 | 1 3 5 7 |
 | 3 | 5 | 1 3 5 |
 
@@ -517,7 +516,7 @@ The problem tests the ability to use loops and conditional statements to print a
 | --- | ------ | ------- |
 | 1   | 3 | 9 |
 | 2 | 4 | 33 |
-| 3 | 5 | 152 |
+| 3 | 5 | 153 |
 
 ### Note:
 
@@ -608,9 +607,11 @@ The problem tests the ability to use loops and conditional statements to count t
 
 | No. | Inputs | Outputs |
 | --- | ------ | ------- |
-| 1   | 10<br>200 | 211.14 km, 33 days |
-| 2 | 20<br>300 | 231.0 km, 34 days |
-| 3 | 30<br>400 | 253.0 km, 35 days |
+| 1   | 10<br>100 | 114.36 km, 8 days |
+| 2 | 20<br>50 | 66.20 km, 3 days |
+| 3 | 5<br>25 | 30.53 km, 5 days |
+| 4 | 1<br>10 | 11.44 km, 8 days |
+| 5 | 50<br>100 | 155.13 km, 3 days |
 
 ### Note:
 
@@ -653,6 +654,8 @@ The problem tests the ability to use loops and conditional statements to print a
 - A floating-point number representing the sum of the first `n` terms of the series.
 
 ### Examples:
+
+<!-- Pi = 4/1 - 4/3 + 4/5 - 4/7 + ... -->
 
 | No. | Inputs | Outputs |
 | --- | ------ | ------- |
@@ -708,9 +711,9 @@ The problem tests the ability to use loops and conditional statements to calcula
 
 | No. | Inputs | Outputs |
 | --- | ------ | ------- |
-| 1   | 1<br>2<br>3<br>4<br>-4<br>-3<br>-2<br>-1 | 30 |
-| 2 | 1<br>2<br>3<br>4<br>-10<br>10<br>-10<br>10 | 200 |
-| 3 | 1<br>2<br>3<br>4<br>-1<br>-2<br>-3<br>-4 | 30 |
+| 1   | 1<br>2<br>3<br>4<br>-4<br>-3<br>-2<br>-1 | 60 |
+| 2 | 1<br>2<br>3<br>4<br>-10 | 130 |
+| 3 | 1<br>2<br>3<br>4<br>-1<br>-2<br>-3<br>-4 | 60 |
 
 ### Note:
 
@@ -718,11 +721,11 @@ The problem tests the ability to use loops and conditional statements to calcula
 
 ## Exercise 30: Amoeba Division - Medium 🔥 (Est. Time: 10-15 mins | Points: 20)
 
-**Problem:** A single-celled amoeba divides into 2 cells every 3 hours. Determine how many cells there will be after t hours if there was initially one amoeba.
+**Problem:** A single-celled amoeba divides into `2` cells every `3` hours. Determine how many cells there will be after `t` hours if there was initially one amoeba.
 
 ### Input:
 
-- An integer representing the number of hours.
+- An integer representing the number of hours `t`.
 
 ### Output:
 
@@ -738,11 +741,12 @@ The problem tests the ability to use loops and conditional statements to calcula
 
 ## Exercise 31: Lowest Temperature - Medium 🔥 (Est. Time: 10-15 mins | Points: 20)
 
-**Problem:** Write a program to determine the lowest temperature over a period of time and whether the temperature has dropped below -15 degrees.
+**Problem:** Write a program to determine the lowest temperature over a period of time and whether the temperature has dropped below -18 degrees.
 
 ### Input:
 
 - An integer representing the number of days.
+- `n` integers representing the temperatures for each day.
 
 ### Output:
 
@@ -900,6 +904,8 @@ The problem tests the ability to use loops and conditional statements to calcula
 | 3   | 25<br>4 | 6 1 |
 
 ### Note:
+
+The problem tests the ability to use loops and conditional statements to calculate the results of the integer division and the remainder of the division of two numbers.
 
 ## Exercise 38: Even Difference - Hard 🥵 (Est. Time: 15-20 mins | Points: 30)
 
@@ -1160,7 +1166,7 @@ The problem tests the ability to use loops and conditional statements to calcula
 | --- | ------ | ------- |
 | 1   | 50 | 13 |
 | 2   | 100 | 18 |
-| 3   | 200 | 27 |
+| 3   | 200 | 28 |
 
 ### Note:
 
@@ -1233,9 +1239,9 @@ The problem tests the ability to use loops and conditional statements to calcula
 
 | No. | Inputs | Outputs |
 | --- | ------ | ------- |
-| 1   | 1400<br>1600 | 1411 1444 1511 1555 |
-| 2   | 1000<br>2000 | 1111 1222 1333 1444 1555 1666 1777 1888 1999 |
-| 3   | 2000<br>3000 | 2002 2111 2222 2333 2444 2555 2666 2777 2888 2999 |
+| 1   | 1400<br>1500 | 1000 1011 1101 1111 1121 1131 1141 1151 1161 1171 1181 1191|
+| 2   | 3000<br>3100 | 3000 3033 |
+| 3   | 2050<br>2300 | 2111 2220 2222 |
 
 
 
@@ -1337,7 +1343,19 @@ pip install pytest
 Then, you can run the tests for a specific exercise using the following command:
 
 ```bash
-python -m unittest exercises/test_exercise_1.py
+python -m unittest tests/test_exercise_1.py
+```
+
+And for more beautiful output, you can use:
+
+```bash
+pytest --color=yes -vv tests/test_exercise_1.py
+```
+
+or to run only failed test from a specific file:
+
+```bash
+pytest --color=yes --failed-first -x tests/test_exercise_1.py
 ```
 
 Replace `exercise_1` with the exercise you're working on (e.g., `exercise_2`, `exercise_3`, etc.) and `test_exercise_1` with the corresponding test file.
